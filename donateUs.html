@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/donateUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Donate to Us and Support our Cause </title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    
+      <nav>
+        <ul class="menu">
+            <li class="logo"><a href="./home.html"><img src="./images/iFood2.png" alt="iFood Logo"></a></li>
+            <li class="item"><a href="./home.html">Home</a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Current Happenings</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./food_festival.html">Food Festivals</a></li>
+                    <li class="subitem"><a href="./deals.html">Deals</a></li>
+                    <li class="subitem"><a href="./articles.html">Articles</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">All About Heatlh</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./healthy_eating.html">Eat healthy</a></li>
+                    <li class="subitem"><a href="./recipes.html">Recipes</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Survey</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./survey.html">Take Survey</a></li>
+                    <li class="subitem"><a href="#">Food Recommendations</a></li>
+                </ul>
+            </li>
+
+            <li class="item button"><a href="./index.html">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    
+    <main>
+      <h1> Help us to see more Deliciousness? </h1>
+      <h2> Donate to the Freshies Foundation </h2>
+      <br>
+      <br>
+      <div class="wrapper">
+        <div class="member">
+          <h3> JOIN US AND BE A MEMBER </h3>
+          <img src="images/Group%20Photo.jpg" alt="Group Photo">
+          <p id="HQ"> Become a monthly contributor and receive a token of appreciation sent straight from our Canada HQ! </p>
+          <nav class="monthly">
+            <ul class="donation">
+              <li class="money">
+                <a href="#home"> $10/month </a>
+              </li>
+              <li class="money">
+                <a href="#home"> $25/month </a>
+              </li>
+              <li class="money">
+                <a href="#home"> $50/month </a>
+              </li>
+              <li class="money">
+                <a href="#home"> $100/month </a>
+              </li>
+            </ul>
+          </nav>
+        </div>    
+          <br>
+          <br>
+          <div class="gift">
+            <h3> MAKE A ONE-TIME GIFT AND SUPPORT US </h3>
+            <img src="images/WhatsApp%20Image%202022-10-22%20at%2015.52.00.jpg" alt="Group Photo2">
+            <div id="textbox">
+              <label for="amount"></label>
+              <input type="text" id="amount" name="damount" placeholder="Input amount here, even if its $1">
+            </div>
+            <p id="donate">
+                <button type="button" id="button" onclick="alertTask()"> Donate Here! </button>
+              </p>
+          </div>
+          <div id="donaters">
+            <h3> ------- Thank YOU to all our supporters below ------- </h3>
+            <button id="show" onclick="tgl()">Show Donaters</button>
+            <div id='myTable'></div>
+          </div>
+        </div>
+    </main>
+    
+    <footer class="footer-distributed">
+      <div class="footer-right">
+          <a href="#"><img src="images/facebook.svg" alt="facebook logo tht directs you to facebook"></a>
+          <a href="#"><img src="images/linkedin.svg" alt="linkedin logo tht directs you to linkedin"></a>
+          <a href="#"><img src="images/twitter.svg" alt="twitter logo tht directs you to twitter"></a>
+          <a href="#"><img src="images/instagram.svg" alt="facebook logo tht directs you to facebook"></a>
+      </div>
+      <div class="footer-left">
+          <p class="footer-links">
+              <a class="link-1" href="./faq.html">FAQ</a>
+              <a href="./terms.html">Terms</a>
+              <a href="./privacy.html">Privacy</a>
+              <a href="./careers.html">Careers</a>
+              <a href="./contact_us.html">Contact us</a>
+              <a href="./donateUs.html">Donate Us</a>
+          </p>
+      </div>
+      <div class="footer-copyright">
+          <p><i>ifood.com &copy;All rights reserved 2022</i></p>
+      </div>
+  </footer>
+
+    <script src="js/donateamos.js"></script> 
+  </body>
+</html>

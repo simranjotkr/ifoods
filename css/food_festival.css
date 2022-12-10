@@ -1,0 +1,516 @@
+/* Styles for food festival page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2e2d2b;
+    font-weight: 400; 
+}
+
+nav {
+    background-color: #006f46;
+    padding: 0 15px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu, 
+  .submenu{
+    list-style-type: none;
+  }
+  
+  nav img {
+    max-width: 90px;              
+    min-width: 25px;
+    padding: 7.5px 10px 7.5px 0;
+  }
+  
+  .item{
+    padding: 10px;
+  }
+  
+  .item.button{
+    padding: 9px 5px;
+  }
+  
+  .item:not(.button) a:hover,
+  .item a:hover::after{
+    color:#8f9296
+  }
+  
+  /* Mobile Menu */
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .menu li a{
+    display: block;
+    padding: 15px 5px;
+  }
+  
+  .menu li.subitem a{
+    padding: 15px;
+  }
+  
+  .toggle{
+    order: 1;
+    font-size: 20px;
+  }
+  
+  .item.button{
+    order:2;
+  }
+  
+  .item{
+    order:3;
+    width: 100%;
+    text-align: center;
+    display: none; 
+  }
+  
+  .active .item{
+    display: block;
+  }
+  
+  .button.secondary{
+    border-bottom: 1px #8f9296 solid;
+  }
+  
+  /* submenu */
+  .submenu{
+   display: none;
+  }
+  
+  .submenu-active .submenu{
+    display: block;
+  }
+  
+  .has-submenu > a::after{
+    font-family: "font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+  }
+  
+  .subitem a{
+    padding: 10px 15px;
+  }
+  
+  .submenu-active{
+    background-color:#013522;
+    border-radius:3px;
+  }
+
+article {
+    /* border: 1px solid red; */
+    
+    height: 300px;
+    overflow: hidden; /* Tip when use margin-top and found space bar at up page */
+    /* border: 1px solid red; */
+    background: url(https://img.freepik.com/free-vector/black-wallpaper-with-motion-lines-background_1017-30151.jpg?size=626&ext=jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-info {
+    /* border: 1px solid red; */
+    /* width: 800px; */
+    margin-top: 3rem;
+    margin-left: 3rem;
+    color: white;
+}
+.header-info h1 {
+    text-align: left;
+    /* border: 1px solid red; */
+    font-size: 3rem;
+    font-weight: 600; 
+    /* width: 460px; */
+    font-family:Arial, Helvetica, sans-serif;
+}
+.header-info p {
+    /* border: 1px solid red; */
+    /* margin: 1rem 0; */
+    line-height: 1.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.header-info a {
+    
+    color: white;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+section {
+    padding: 1.5rem 0;
+}
+
+.festival-content {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+.festival-detail {
+    width: 360px;
+    margin: 1rem 1rem;
+    height: 520px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.festival-img {
+    height: 200px;
+    background: brown;
+    overflow: hidden;
+}
+.festival-img img {
+    width: 100%;
+}
+.input-content {
+    text-align: center;
+    border-bottom: 2px solid #e5e5e5;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.input-content h3 {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 1rem 0;
+}
+.input-content h1 {
+    margin: 1rem 0;
+}
+.input-content p {
+    color: #9f9f9f;
+    line-height: 1.1;
+}
+.festival-pictures {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.festival-content a {
+    
+    color: white;
+    background: #595857;
+    border-radius: 50px;
+    border: 1px solid #2e2d2b;
+    padding: .5rem 1rem;
+    display: inline-block;
+}
+.input-btn {
+    display: flex;
+    justify-content:space-around;
+    margin: 1rem 1rem;
+}
+.coupon {
+  text-align: center;
+}
+.coupon button {
+  background:rgb(81, 207, 123);
+  text-align: center;
+}
+
+.get-discount-btn {
+    background: rgb(81, 207, 123);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid #2e2d2b;
+    padding: .7rem 1.5rem;
+}
+
+.coupon-container .close {
+  width: 24px;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.coupon-container {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  width: 350px;
+  text-align: center;
+  background: #a3f9ff;
+  margin: 100px auto 30px auto;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(30px);
+  transition: all 400ms ease;
+}
+
+.coupon-container.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.coupon-container .gift {
+  position: absolute;
+  width: 150px;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coupon-container .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.coupon-container h2,
+.coupon-container p,
+.coupon-container .discount,
+.coupon-container .code,
+.coupon-container .btn {
+  position: relative;
+}
+
+.coupon-container h2 {
+  color: #023047;
+  font-weight: 900;
+  font-size: 30px;
+  padding-top: 70px;
+  margin-bottom: 0;
+}
+
+.coupon-container p {
+  font-size: 18px;
+  color: #023047;
+  margin: 8px
+}
+.coupon-container .discount {
+  font-family: "Poppins", sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: #076170;
+}
+
+.coupon-container .code {
+  font-size: 45px;
+  font-weight: 900;
+}
+.coupon-container .btn {
+  text-decoration: none;
+  background: #e63946;
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+
+.coupon-container .btn:hover {
+  background: #e22535;
+}
+
+.get-discount-btn {
+  
+  padding:  8px 32px;
+  background: #023047;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+
+/* Footer */
+
+.footer-distributed {
+  color: white;
+  background-color: #004e36;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  bottom: 0;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 0.5em 0 0 3em;
+  transition: ease .25s;
+
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  max-width: 180px;
+  padding: 1% 3em 0 0;
+}
+
+.footer-copyright p {
+  margin: 0;
+  padding-bottom: 0.75em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 3px;
+  transition: all .25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}  
+
+@media only screen and (max-width: 960px) {
+    .festival-pictures {
+        flex-direction: column;   
+    }
+    article {
+      height: 460px;
+  }
+}
+
+  /*Tablet menu*/  
+@media all and (min-width:700px){
+    /*.menu{
+      justify-content: center;
+    }*/
+    nav img{
+      max-width: 70px; 
+      flex:1;
+    }
+  
+    .item.button{
+      width:auto;
+      order:1;
+      display: block;
+    }
+  
+    .toggle{
+      flex:1;
+      text-align: right;
+      order:2;
+    }
+  
+    /* Button up from tablet screen */
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button a {
+      background: #004e36;
+      border: 1px #01b976;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      background: transparent;
+      border: 1px #01b976 solid;  
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #01b976;
+      border-color: #004e36;
+    }
+  
+  }
+  
+  /*Dektop menu*/
+  @media all and (min-width: 960px) {
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+    .button {
+        order: 2;
+    }
+    .submenu-active .submenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 68px;
+        background: #004e36;
+        width: 150px;
+        text-align: left;
+    }
+    .toggle {
+        display: none;
+    }
+    .submenu-active {
+        border-radius: 0;
+    }
+  }

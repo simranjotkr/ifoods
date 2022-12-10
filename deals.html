@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood - Your Number #1 Food Recommendation Plug</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/deals.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="./home.html"><img src="./images/iFood2.png" alt="iFood Logo"></a></li>
+            <li class="item"><a href="./home.html">Home</a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Current Happenings</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./food_festival.html">Food Festivals</a></li>
+                    <li class="subitem"><a href="./deals.html">Deals</a></li>
+                    <li class="subitem"><a href="./articles.html">Articles</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">All About Health</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./healthy_eating.html">Eat healthy</a></li>
+                    <li class="subitem"><a href="./recipes.html">Recipes</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Survey</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./survey.html">Take Survey</a></li>
+                </ul>
+            </li>
+
+            <li class="item button"><a href="./index.html">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <section class="deals-header-block">
+        <div class="search-header">
+            <h1>Find Best Deals on
+                <span class="font-weight-light">ifood</span>
+            </h1>
+            <h5>Let our experts find the best coupons and deals for you!</h5>
+        </div>
+        <div class="search-form">
+            <input type="search" placeholder="Search for stores, coupons, &amp; offers…">
+        </div>
+        </div>
+    </section>
+    <section class="deals-offer-block">
+        <h3>Top Offers</h3>
+        <div class="offer-block-container">
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/scotia.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get Flat 30% Off on payment via Scotia Bank</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days</p>
+                    <div class="coupon-div"><span class="red"><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage">30%
+                            off</span><span class="coupon-code">SCOTIA30</span><span class="copy-span"><img
+                                class="copy" src="./images/copy.svg" alt="copy_coupon"
+                                onclick="copyCouponCode(this)"></span></div>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/fifty.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Special Offer: Get Up to 50% Off On Orders above $50</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 2 days</p>
+                    <div class="coupon-div"><span class="red"><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage">50%
+                            off</span><span class="coupon-code">HUNGRY50</span><span class="copy-span"><img
+                                class="copy" src="./images/copy.svg" alt="copy_coupon"
+                                onclick="copyCouponCode(this)"></span></div>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/ubereats.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get upto 25% Off on ordering from Uber Eats</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 30 days</p>
+                    <div class="coupon-div"><span class="red"><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage">Upto 25% off</span> <span class="coupon-code">IFUB25</span><span class="copy-span"><img
+                                    class="copy" src="./images/copy.svg" alt="copy_coupon"
+                                    onclick="copyCouponCode(this)"></span></div>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/heart.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Special Offer: Get a meal FREE upto $30 for new users</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>$30 off</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deals-offer-block">
+        <h3>Top Coupons</h3>
+        <div class="offer-block-container">
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/scotia.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get Flat 30% Off on payment via Scotia Bank</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>30% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/fifty.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Special Offer: Get Up to 50% Off On Orders above $50</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 2 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>50% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/ubereats.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get upto 25% Off on ordering from Uber Eats</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 30 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>Upto 25% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/heart.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Special Offer: Get a meal FREE upto $30 for new users</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>$30 off</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deals-offer-block">
+        <h3>Top Restaurant</h3>
+        <div class="offer-block-container">
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/scotia.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get Flat 30% Off on payment via Scotia Bank</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>30% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/fifty.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Special Offer: Get Up to 50% Off On Orders above $50</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 2 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>50% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/ubereats.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get upto 25% Off on ordering from Uber Eats</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 30 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>Upto 25% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/heart.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Special Offer: Get a meal FREE upto $30 for new users</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>$30 off</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deals-offer-block">
+        <h3>Top Offers</h3>
+        <div class="offer-block-container">
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/scotia.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get Flat 30% Off on payment via Scotia Bank</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>30% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/fifty.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Special Offer: Get Up to 50% Off On Orders above $50</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 2 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>50% off</p>
+                </div>
+            </div>
+            <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                <img class="offer-block-img" src="./images/ubereats.png" alt="pay_with_scotia">
+                <div class="offer-block-content">
+                    <h4>Get upto 25% Off on ordering from Uber Eats</h4>
+                    <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 30 days</p>
+                    <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                alt="percentage"></span>Upto 25% off</p>
+                </div>
+            </div>
+            <div class="offer-block">
+                <div class="offer-block" onmouseenter="flip(this)" onmouseout="flip(this)">
+                    <img class="offer-block-img" src="./images/heart.png" alt="pay_with_scotia">
+                    <div class="offer-block-content">
+                        <h4>Special Offer: Get a meal FREE upto $30 for new users</h4>
+                        <p><span><img class="clock" src="./images/clock.svg" alt="offer_ends_in"></span>Ends in 18 days
+                        </p>
+                        <p class="red"><span><img class="percentage" src="./images/percentage.svg"
+                                    alt="percentage"></span>$30 off</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="#"><img src="images/facebook.svg" alt="facebook logo tht directs you to facebook"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="linkedin logo tht directs you to linkedin"></a>
+            <a href="#"><img src="images/twitter.svg" alt="twitter logo tht directs you to twitter"></a>
+            <a href="#"><img src="images/instagram.svg" alt="facebook logo tht directs you to facebook"></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="./faq.html">FAQ</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./careers.html">Careers</a>
+                <a href="./contact_us.html">Contact us</a>
+                <a href="./donateUs.html">Donate Us</a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p><i>ifood.com &copy;All rights reserved 2022</i></p>
+        </div>
+    </footer>
+    <script src="./js/deals.js"></script>
+</body>
+
+</html>

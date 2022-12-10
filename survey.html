@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood - Your Number #1 Food Recommendation Plug</title>
+    <link rel="stylesheet" href="css/mainleon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#"><img src="images/iFood2.png" alt="iFood Logo"></a></li>
+            <li class="item"><a href="/home.html">Home</a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Current Happenings</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="food_festival.html">Food Festivals</a></li>
+                    <li class="subitem"><a href="deals.html">Deals</a></li>
+                    <li class="subitem"><a href="articles.html">Articles</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">All About Heatlh</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="healthy_eating.html">Eat healthy</a></li>
+                    <li class="subitem"><a href="recipes.html">Recipes</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Survey</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="survey.html">Take Survey</a></li>
+                    <li class="subitem"><a href="recommendation.html">Food Recommendations</a></li>
+                </ul>
+            </li>
+
+            <li class="item button"><a href="./index.html">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="survey">
+    <h1>Take our survey!</h1>
+    <p>Fill up this form and tell us more about you and your food choices, so we can recommend the best restaurants and supermarkets around you! </p>
+    <p>Get the chance to win a $50 dolar coupon to use with the restaurants of your choice.</p>
+      <form action="recommendation.html" method="get" id="formsurvey"> 
+        <fieldset>
+            <legend>Tell us about you</legend>
+                <label class="information" for="tellus">Name: </label> <input class="aboutyou" type="text" id="tellus" name="tellus" /><span>*</span><br /> 
+                <label class="information" for="email">E-mail:</label> <input class="aboutyou" type="email" id="email" name="email" /><span>*</span><br />
+                <label class="information" for="phonenumber">Phone Number:</label> <input class="aboutyou" type="tel" id="phonenumber" name="phonenumber" /><span>*</span><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Tell us about your food preferences</legend>
+                <label class="foodpref" id="vegetarian">Are you vegetarian?</label><br />
+                    <input type="radio" id="vegeyes" name="vegetarian" value="y" />Yes <br />
+                    <input type="radio" id="vegeno" name="vegetarian" value="n" />No<br /><br />
+
+                <label class="foodpref">Are you vegan?</label><br />
+                    <input type="radio" id="vegayes" name="vegan" value="y" />Yes <br />
+                    <input type="radio" id="vegano" name="vegan" value="n" />No<br /><br />
+
+                <label class="foodpref">Do you like spice food?</label><br />
+                    <input type="radio" id="spiceyes" name="spicefood" value="y" />Yes <br />
+                    <input type="radio" id="spiceno" name="spicefood" value="n" />No<br /><br />
+
+                <label class="foodpref" id="allergie">Do you have any allergies?</label><span>*</span><br />
+                    <input type="radio" id="allergieno" name="allergie" value="n" />No <br />
+                    <input type="radio" id="allergieyes" name="allergie" value="y" />Yes
+                    <textarea name="foodpref" placeholder="If yes, please enter details."></textarea><br /><br />
+
+                <label class="foodpref">What meal do you consider the most important one?</label><br />
+                    <input type="radio" id="bf" name="meal" value="bf" />Breakfest <br />
+                    <input type="radio" id="lu" name="meal" value="lu" />Luch<br />
+                    <input type="radio" id="di" name="meal" value="di" />Dinner<br /><br />
+
+                <label class="foodpref">Do you usually dine in ot take out?</label><br />
+                    <input type="radio" id="dinein" name="takeinout" value="di" />Dine in <br />
+                    <input type="radio" id="takeo" name="takeinout" value="tk" />Take out<br /><br />
+
+                <label class="foodpref">Select what kind of food do you like most:</label><br />
+                    <input type="checkbox" id="basque" name="foodpref" value="bac" />Basque Cuisine<br />
+                    <input type="checkbox" id="british" name="foodpref" value="brc" />British Cuisine<br />
+                    <input type="checkbox" id="chinese" name="foodpref" value="chc" />Chinese Cuisine<br />
+                    <input type="checkbox" id="egyptian" name="foodpref" value="egc" />Egyptian Cuisine<br />
+                    <input type="checkbox" id="israeli" name="foodpref" value="isc" />Israeli Cuisine<br />
+                    <input type="checkbox" id="italian" name="foodpref" value="itc" />Italian Cuisine<br />
+                    <input type="checkbox" id="japanese" name="foodpref" value="jac" />Japanese Cuisine<br />
+                    <input type="checkbox" id="portuguese" name="foodpref" value="ptc" />Portuguese Cuisine<br />
+                    <input type="checkbox" id="spanish" name="foodpref" value="spc" />Spanish Cuisine<br />
+                    <input type="checkbox" id="mediterranean" name="foodpref" value="tmc" />The Mediterranean Food<br />
+                    <input type="checkbox" id="kindother" name="foodpref" value="oth" />Other
+                    <textarea name="foodpref" placeholder="If others, please enter here."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tell us how we should contact you</legend>
+                <label class="contact">How did you hear about us?</label><br />
+                    <input type="radio" id="search" name="hearfromus" value="s" />Search Engine <br />
+                    <input type="radio" id="word" name="hearfromus" value="w" />Word of mouth <br />
+                    <input type="radio" id="aboutusother" name="hearfromus" value="o" />Other <br /><br />
+
+                 <label class="contact">I agree with <a class="btnform" href="#">terms and conditions</a> to receive offers from restaurants</label><br />
+                    <input type="checkbox" id="terms" name="receive" value="yes" checked/>YES<span>*</span> <br /><br />
+
+                <label class="contact">Contact via:</label><br />
+                    <select name="contact">
+                        <option value="em">email</option>
+                        <option value="ph">phonenumber</option>
+                    </select><br /><br />
+
+                <label class="contact">Comments:</label><br />
+                    <textarea name="comments" placeholder="If you have any commnents, please enter here."></textarea>
+        </fieldset>
+
+        <input type="button" id="register" value="Submit" class="btnsubmit"  name="btnSubmit" />
+        <input type="button" id="reset_form" value="Reset" />
+      </form>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="#"><img src="images/facebook.svg" alt="facebook logo tht directs you to facebook"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="linkedin logo tht directs you to linkedin"></a>
+            <a href="#"><img src="images/twitter.svg" alt="twitter logo tht directs you to twitter"></a>
+            <a href="#"><img src="images/instagram.svg" alt="facebook logo tht directs you to facebook"></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="./faq.html">FAQ</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./careers.html">Careers</a>
+                <a href="./contact_us.html">Contact us</a>
+                <a href="./donateUs.html">Donate Us</a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p><i>ifood.com &copy;All rights reserved 2022</i></p>
+        </div>
+    </footer>
+
+<script src="js/survey.js"></script>    
+</body>
+</html>

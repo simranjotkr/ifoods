@@ -1,7 +1,91 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="utf-8">
+    <title>iFood - Your Number #1 Food Recommendation Plug</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/reset_popup_pwd.css">
 </head>
-<body>
-<h1>Hello</h1>
+
+<body id="particles-js">
+    <div class="center">
+        <div class="container">
+            <div class="text">
+                Login Form
+                <!-- <a href="./home.html"><img class="close-btn" src="./images/close.svg"></a> -->
+            </div>
+
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+
+            <div id="forget-passwd-msg-holder">
+            </div>
+
+            <form id="login-form">
+                <div class="data" id="login-email-div">
+                    <label for="login-email">Email</label>
+                    <input id="login-email" name="loginemail" type="text" required>
+                </div>
+
+                <div class="data" id="login-pwd-div">
+                    <label for="login-pwd">Password</label>
+                    <input id="login-pwd" name="loginpwd" type="password" required>
+                </div>
+
+                <div class="forgot-pass" id="forget-pwd-div">
+                    <a href="#" id="forget-pwd">Forgot Password?</a>
+                </div>
+
+                <div class="btn">
+                    <div class="inner" name="submitbutton" id="submit-button-div"></div>
+                    <button id="submit-button" type="submit">login</button>
+                </div>
+
+                <div class="signup-link">
+                    Not a member? <a href="#">Signup now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="loginPopup"> -->
+        <div>
+        <div class="formPopup" id="reset-popup">
+            <form action="#" id="reset-form" class="container">
+                <div class="text">
+                    Reset Password
+                    <a onclick="closeTheForm()"><img class="close-btn" src="./images/close.svg"></a>
+                </div>
+                <div class="resetPwdSubHeading">
+                    <h4>Enter your email address in the form below and we will send
+                        you further instructions on how to reset your password.
+                    </h4>
+                </div>
+                <div id="reset-pwd-error-msg-holder">
+                    <p id="reset-pwd-error-msg">Email entered does<span id="error-msg-second-line"> not exist in directory.</span></p>
+                </div>
+                <div id="reset-pwd-success-msg-holder">
+                    <p id="reset-pwd-success-msg">Password reset link has been<span id="success-msg-second-line"> sent to your registered email.</span></p>
+                </div>
+                <div class="data resetEmailDiv" id="reset-pwd-email-div">
+                    <label for="reset-pwd-email">Email</label>
+                    <input id="reset-pwd-email" name="resetpwdemail" type="text" required>
+                </div>
+                <div class="btn">
+                    <div class="inner" name="resetpwdbutton" id="submit-button-div"></div>
+                    <button class="blueButton" id="reset-pwd-button" type="submit">Reset Password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Import Particles.js and app.js files -->
+    <script src="particles.js-master/particles.js">
+    </script>
+    <script src="particles.js-master/demo/js/app.js">
+    </script>
+    <script src="./js/login.js"></script>
 </body>
+
 </html>

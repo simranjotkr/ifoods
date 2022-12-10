@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/careerform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Careers </title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul class="menu">
+            <li class="logo"><a href="./home.html"><img src="./images/iFood2.png" alt="iFood Logo"></a></li>
+            <li class="item"><a href="./home.html">Home</a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Current Happenings</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./food_festival.html">Food Festivals</a></li>
+                    <li class="subitem"><a href="./deals.html">Deals</a></li>
+                    <li class="subitem"><a href="./articles.html">Articles</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">All About Health</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./healthy_eating.html">Eat healthy</a></li>
+                    <li class="subitem"><a href="./recipes.html">Recipes</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Survey</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./survey.html">Take Survey</a></li>
+                </ul>
+            </li>
+
+            <li class="item button"><a href="./index.html">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+      <div class="wrapper">
+        <form action="./careers_confirm.html" method="get">
+          <h1>Join us on this delicious journey!</h1>
+          <h3>Complete the form below to apply and we'll reach out to you if we think you'd be a great fit!</h3>
+          <div class="formElement">
+            <span>Email Address </span>
+            <input type="email" id="email" name="Your email" placeholder="Email">
+            <span class="required"></span>
+          </div>
+          <div class="formElement">
+            <span>First Name </span>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <span class="required"></span>
+          </div>
+          <div class="formElement">
+            <span>Last Name </span>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <span class="required"></span>
+          </div>
+          <div class="formElement date">
+            <span> Date of Birth </span>
+            <input type="date" name="date">
+          </div>
+          <div class="formElement">
+            <span>Current Address </span>
+            <input type="text" name="Current Address Required question" placeholder="">
+            <br>
+            <input type="text" name="Current Address Required question" placeholder="">
+            <br>
+            <input type="text" name="Current Address Required question" placeholder="">
+          </div>
+          <div class="two-col">
+            <div class="col1">
+              <label for="field1">Country</label>
+              <input id="field1" name="field1" type="text">
+            </div>
+            <div class="col2">
+              <label for="field2">Postal Code</label>
+              <input id="field2" name="field2" type="text">
+            </div>
+          </div>
+          <div class="formElement position">
+            <br>
+            <span>Position Applied </span>
+            <select name="position">
+              <option disabled selected value> -- select position -- </option>
+              <option value="marketing">Marketing Manager</option>
+              <option value="sales">Sales Manager</option>
+              <option value="product">Product Lead</option>
+              <option value="intern">Internship Opportunities</option>
+            </select>
+          </div>
+          <div class="formElement references">
+            <span>How did you hear about us </span>
+            <select name="references">
+              <option disabled selected value> -- select -- </option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Social Media">Social Media</option>
+              <option value="Company Website">Company Website</option>
+              <option value="Family / Friend">Family / Friend</option>
+            </select>
+          </div>
+          <div class="formElement resume">
+            <span>Resume Upload</span>
+            <input type="file" name="resume" accept="application/pdf, text/docs, text/docx">
+          </div>
+          <input type="button" id="register" value="Apply Now">
+        </form>
+      </div>
+
+      <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="#"><img src="images/facebook.svg" alt="facebook logo tht directs you to facebook"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="linkedin logo tht directs you to linkedin"></a>
+            <a href="#"><img src="images/twitter.svg" alt="twitter logo tht directs you to twitter"></a>
+            <a href="#"><img src="images/instagram.svg" alt="facebook logo tht directs you to facebook"></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="./faq.html">FAQ</a>
+                <a href="./terms.html">Terms</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="./careers.html">Careers</a>
+                <a href="./contact_us.html">Contact us</a>
+                <a href="./donateUs.html">Donate Us</a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p><i>ifood.com &copy;All rights reserved 2022</i></p>
+        </div>
+      </footer>
+
+      <script src="js/cfamos.js"></script>
+    </main>
+  </body>
+</html>

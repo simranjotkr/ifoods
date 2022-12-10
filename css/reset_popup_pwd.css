@@ -1,0 +1,61 @@
+.loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  #reset-popup {
+    display: none;
+  }
+
+  .blueButton  {
+  background: linear-gradient(45deg, #00AFD3, #099AD9) !important;
+  } 
+
+  .resetPwdSubHeading h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: grey;
+    text-align: center;
+  }
+  .resetPwdSubHeading {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
+
+  #reset-pwd-error-msg-holder {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #reset-pwd-error-msg {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+
+  #reset-pwd-success-msg-holder {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #reset-pwd-success-msg {
+    display: none;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    background-color: lightgreen;
+    opacity: 0;
+  }
+
+  .resetEmailDiv {
+    margin-bottom: 10%;
+  }

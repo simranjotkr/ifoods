@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head Section -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood - Your Number #1 Food Recommendation Plug</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="./home.html"><img src="./images/iFood2.png" alt="iFood Logo"></a></li>
+            <li class="item"><a href="./home.html">Home</a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Current Happenings</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./food_festival.html">Food Festivals</a></li>
+                    <li class="subitem"><a href="./deals.html">Deals</a></li>
+                    <li class="subitem"><a href="./articles.html">Articles</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">All About Health</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./healthy_eating.html">Eat Healthy</a></li>
+                    <li class="subitem"><a href="./recipes.html">Recipes</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Survey</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="./survey.html">Take Survey</a></li>
+                </ul>
+            </li>
+
+            <li class="item button"><a href="./index.html">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    
+   
+<!-- About iFood Section -->
+
+<section class="about">
+    <div class="about-content">
+        <h2>Welcome to <span class="txt">iFood</span></h2>
+        <p>iFood is a Canadian company founded in 2022 with the goal to provide excellent food Recommendations to lover of
+            good food.<br>
+            It is a new technology, it makes perfect sense that there are doubts about how iFood works. Come find out everything, we are Opening the Kitchen!</p>
+        <a href="#" class="abtn">Learn More</a>
+    </div>
+</section>
+
+
+<!-- Subscribe To Newsletter Section -->
+
+<section class="subscribe">
+    <div class="subscribe-row">
+        <div class="col">
+        <h3>Sign Up For Our Newsletter</h3>
+        </div>
+        
+        <div class="col">
+            <form action="#" id="form">
+                <div class="input-box">
+            <input type="text" id="email" placeholder= "Enter Email Address">
+            <button class="btndark" type="button" onclick="validation()">Submit</button>
+            <span id="response"></span>
+        </div>
+        </form>
+        </div>
+</section>
+
+
+<!-- Happenings Section -->
+
+<div class="happ">
+    <h2>Latest Happenings</h2>
+    <div class="line"></div>
+</div>
+
+<section class="happenings">
+
+    <div class="happenings-row">
+        <div class="col1">
+            <h2>Get Deals</h2>
+            <a href="/privacy.html" class="happbtn">Learn More</a>
+        </div>
+        
+        <div class="col2">
+            <h2>Eat Healthy</h2>
+            <a href="/privacy.html" class="happbtn1">Learn More</a>
+        </div>
+        
+        <div class="col3">
+            <h2>Recommendation</h2>
+            <a href="/privacy.html" class="happbtn2">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Articles Section -->
+
+<section class="articles">
+
+<div class="title">
+    <h2>Our Latest Articles</h2>
+    <div class="line"></div>
+</div>
+
+<div class="articles-row">
+    <div class="col">
+        <img class="articleimg" src="/images/iMeal-1.jpeg" alt="ifood">
+        <a href="/terms.html"><h4>Top 10 Street Food You Must Try In Toronto</h4></a>
+        <p>Looking for the best street food in Toronto? We've compiled a list of the most notable street vendors.</p>
+        <a href="/privacy.html" class="btn">Read More</a>
+    </div>
+
+    <div class="col">
+        <img class="articleimg1" src="/images/iMeal-1.jpeg" alt="ifood2">
+        <a href="/terms.html"><h4>9 Must-Try Foods In The City of Toronto</h4></a>
+        <p>Looking for the best street food in Toronto? We've compiled a list of the most notable street vendors.</p>
+        <a href="/privacy.html" class="btn">Read More</a>
+    </div>
+
+    <div class="col">
+        <img class="articleimg2" src="/images/iMeal-Toronto.jpeg" alt="ifood2">
+        <a href="/terms.html"><h4>15 Meals In Toronto You Have To Atleast Eat Once</h4></a>
+        <p>Looking for the best street food in Toronto? We've compiled a list of the most notable street vendors.</p>
+        <a href="/privacy.html" class="btn">Read More</a>
+    </div>
+</section>
+
+<!-- More Articles Button -->
+
+<div class="more-articles">
+    <a href="/privacy.html" class="sbtn">See More Articles</a>
+</div>
+
+<!-- Footer Section -->
+
+<footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="#"><img src="images/facebook.svg" alt="facebook logo tht directs you to facebook"></a>
+        <a href="#"><img src="images/linkedin.svg" alt="linkedin logo tht directs you to linkedin"></a>
+        <a href="#"><img src="images/twitter.svg" alt="twitter logo tht directs you to twitter"></a>
+        <a href="#"><img src="images/instagram.svg" alt="facebook logo tht directs you to facebook"></a>
+    </div>
+    <div class="footer-left">
+        <p class="footer-links">
+            <a class="link-1" href="./faq.html">FAQ</a>
+            <a href="./terms.html">Terms</a>
+            <a href="./privacy.html">Privacy</a>
+            <a href="./careers.html">Careers</a>
+            <a href="./contact_us.html">Contact us</a>
+            <a href="./donateUs.html">Donate Us</a>
+        </p>
+    </div>
+    <div class="footer-copyright">
+        <p><i>ifood.com &copy;All rights reserved 2022</i></p>
+    </div>
+</footer>
+
+<script src="./js/home.js"></script>
+</body>
+</html>

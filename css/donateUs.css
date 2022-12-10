@@ -1,0 +1,445 @@
+/* Styles for Body */
+
+body{
+  margin: 0%;
+  background-image: linear-gradient(to bottom right, white, darkseagreen);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Styles for Navigation Menu */
+.menu{
+  background-color: #006f46;
+  padding: 0 15px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu, 
+.submenu{
+  list-style-type: none;
+}
+
+nav img {
+  max-width: 90px;              
+  min-width: 25px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.item{
+  padding: 10px;
+}
+
+.item.button{
+  padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after{
+  color:#8f9296
+}
+
+/* Mobile Menu */
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.menu li a{
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu li.subitem a{
+  padding: 15px;
+}
+
+.toggle{
+  order: 1;
+  font-size: 20px;
+}
+
+.item.button{
+  order:2;
+}
+
+.item{
+  order:3;
+  width: 100%;
+  text-align: center;
+  display: none; 
+}
+
+.active .item{
+  display: block;
+}
+
+.button.secondary{
+  border-bottom: 1px #8f9296 solid;
+}
+
+/* submenu */
+.submenu{
+ display: none;
+}
+
+.submenu-active .submenu{
+  display: block;
+}
+
+.has-submenu > a::after{
+  font-family: "font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  padding-left: 5px;
+}
+
+.subitem a{
+  padding: 10px 15px;
+}
+
+.submenu-active{
+  background-color:#013522;
+  border-radius:3px;
+}
+
+/* Styles for Donate Us Page */
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  overflow-y:scroll;
+
+}
+
+h1, h2, h3 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+  color:#006f46;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  width:50%;
+  flex-direction: column;
+}
+
+.member img {
+  margin-left: auto;
+  margin-right: auto; 
+  height: auto;
+  width: 50%;
+  border-radius: 20%;
+}
+
+#HQ{
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding-top: 3%;
+}
+
+.monthly{
+  display: table;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+
+
+.donation {
+    display: flex;
+    padding-left: 0%;
+    list-style-type: none;
+
+}
+
+.gift{
+  display: flex;
+  flex-wrap: wrap;
+  width:50%;
+  flex-direction: column;
+}
+
+.gift img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  height: auto;
+  width: 45%;
+  border-radius: 20%;
+}
+
+
+#donate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#textbox{
+  padding-top: 5%;
+}
+
+button{
+    display: inline-block;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    background-color: #006f46;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+button:hover{
+  background-color:rgb(142, 142, 0);
+}
+
+input[type=text], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #00955e;
+  color: white;
+  transition: width 0.4s ease-in-out;
+
+}
+
+::placeholder {
+  color: white;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+
+
+.money{
+    border-radius: 25px;
+    background-color: #006f46;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.money:hover{
+    background-color: rgb(142, 142, 0);
+}
+
+
+.money a{
+  color: white;
+  text-decoration: none;
+}
+
+#donaters{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#table{
+  display: block;
+  margin-top: 20px;
+  margin: auto;
+}
+
+th, td {
+  padding: 15px;
+  margin: 15px;
+  width: 10px;
+}
+
+
+/* Footer */
+
+.footer-distributed {
+  color: white;
+  background-color: #004e36;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  bottom: 0;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 0.5em 0 0 3em;
+  transition: ease .25s;
+
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  max-width: 180px;
+  padding: 1% 3em 0 0;
+}
+
+.footer-copyright p {
+  margin: 0;
+  padding-bottom: 0.75em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 3px;
+  transition: all .25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/*Tablet menu*/
+@media all and (min-width:700px){
+  /*.menu{
+    justify-content: center;
+  }*/
+
+  nav img{
+    max-width: 70px; 
+    flex:1;
+  }
+
+  .item.button{
+    width:auto;
+    order:1;
+    display: block;
+  }
+
+  .toggle{
+    flex:1;
+    text-align: right;
+    order:2;
+  }
+
+  /* Button up from tablet screen */
+  .menu li.button a {
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+  .button a {
+    background: #004e36;
+    border: 1px #01b976;
+  }
+  .button.secondary {
+    border: 0;
+  }
+  .button.secondary a {
+    background: transparent;
+    border: 1px #01b976 solid;  
+  }
+  .button a:hover {
+    text-decoration: none;
+  }
+  .button:not(.secondary) a:hover {
+    background: #01b976;
+    border-color: #004e36;
+  }
+
+}
+
+/*Dektop menu*/
+@media all and (min-width: 960px) {
+
+  .item {
+      order: 1;
+      position: relative;
+      display: block; 
+      width: auto;
+  }
+  .button {
+      order: 2;
+  }
+  .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: #004e36;
+      width: 150px;
+      text-align: left;
+  }
+  .toggle {
+      display: none;
+  }
+  .submenu-active {
+      border-radius: 0;
+  }
+}
