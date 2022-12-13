@@ -13,6 +13,7 @@
 - [x] I tried to implement an image slider on the homepage using javascript and Jquery. This really stressed the hell out of me, I knew exactly what I wanted (the curtain effect), but I wasn't able to get it done. So I settled for the (fadeIn and fadeOut effect) just to meet the need of this phase of the project, until I'm able to figure it out.
 - [x] For the "phase one" of this project, I've submitted the landing page "/home.html" alongside with its corresponding css and javascript named "home.css" and "home.js" respectively. I implemented the form validation on the homepage using javascript, also I used jQuery and Javascript to create a slider on the homepage.
 - [x] For the "phase two" of this project, I've submitted yet another page "faq.html" and I updated the previous "home.css" file to style the FAQs page.
+- [x] For the "phase three" of this project, I've submitted the "privacy.html" and made some changes to the "home.css" and "home.js" files.
 
 
 ## Learning curve and challenges for Teerawut Sangpueng

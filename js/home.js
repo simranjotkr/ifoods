@@ -120,3 +120,16 @@ function closeSubmenu(e){
 }
 
 document.addEventListener('click', closeSubmenu, false);
+
+// Cookies Consent
+
+const cookieContainer = document.querySelector(".cookies");
+const acceptBtn = document.querySelector(".accept button");
+
+setTimeout(() => {
+  cookieContainer.classList.remove("hide");
+}, 1000);
+
+acceptBtn.addEventListener("click", () => {
+  cookieContainer.classList.add("hide");
+});

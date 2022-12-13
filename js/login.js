@@ -16,7 +16,6 @@ const user = [
         "email": "user@user.ca"
     }
 ]
-//local storage
 
 document.getElementById('submit-button').addEventListener('click', (e) => {
     e.preventDefault();
